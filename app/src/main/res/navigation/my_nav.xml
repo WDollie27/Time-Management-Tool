@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/timer">
+
+    <activity
+        android:id="@+id/timer"
+        android:name="com.example.timemanagementtool.Timer"
+        android:label="activity_timer"
+        tools:layout="@layout/activity_timer" />
+    <activity
+        android:id="@+id/countdown"
+        android:name="com.example.timemanagementtool.Countdown"
+        android:label="activity_countdown"
+        tools:layout="@layout/activity_countdown" />
+    <activity
+        android:id="@+id/contact"
+        android:name="com.example.timemanagementtool.Contact"
+        android:label="activity_contact"
+        tools:layout="@layout/activity_contact" />
+</navigation>

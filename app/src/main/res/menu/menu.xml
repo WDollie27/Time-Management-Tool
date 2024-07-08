@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:title="Database"
+        android:icon="@drawable/navdata"
+        android:iconTint="@color/black"/>
+
+    <item
+        android:id="@+id/dashboard"
+        android:title="Countdown"
+        android:icon="@drawable/navtime"
+        android:iconTint="@color/black"/>
+
+    <item
+        android:id="@+id/task"
+        android:title="Tasks"
+        android:icon="@drawable/navmin"
+        android:iconTint="@color/black"/>
+
+    <item
+        android:id="@+id/about"
+        android:title="Contact"
+        android:icon="@drawable/navcontact"
+        android:iconTint="@color/black"/>
+
+</menu>

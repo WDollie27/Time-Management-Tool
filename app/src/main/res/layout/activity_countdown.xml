@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Countdown">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieImage"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_marginTop="-64dp"
+        android:layout_width="match_parent"
+        android:layout_height="460dp"/>
+
+    <cn.iwgang.countdownview.CountdownView
+        android:id="@+id/countdownView"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/lottieImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-314dp"
+        app:isHideTimeBackground="false"
+        app:isShowDay="true"
+        app:isShowHour="true"
+        app:isShowMillisecond="true"
+        app:isShowMinute="true"
+        app:isShowSecond="true"
+        app:isTimeTextBold="true"
+        app:suffixDay="d"
+        app:suffixGravity="bottom"
+        app:suffixHour="h"
+        app:suffixMillisecond="ms"
+        app:suffixMinute="m"
+        app:suffixSecond="s"
+        app:suffixTextColor="#FFFFFF"
+        app:suffixTextSize="12sp"
+        app:timeBgColor="#ffa07a"
+        app:timeTextColor="#FFFFFF"
+        app:timeTextSize="32sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="123dp"
+        android:text="Activity 1"
+        android:fontFamily="@font/variable"
+        android:textColor="@color/white"
+        android:textSize="30dp"/>
+
+    <Button
+        android:id="@+id/btnDatePicker"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="150dp"
+        android:backgroundTint="#ffa07a"
+        android:gravity="center"
+        android:text="Date Picker"
+        android:textColor="@color/white" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigator"
+        android:background="@color/purple_500"
+        app:itemTextColor="@color/black"
+        app:menu="@menu/menu"
+        android:layout_alignParentBottom="true"
+        app:backgroundTint="#ffa07a"/>
+
+</RelativeLayout>

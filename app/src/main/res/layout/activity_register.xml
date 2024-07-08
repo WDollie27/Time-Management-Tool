@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/black"
+    tools:context=".Register">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Register"
+        android:fontFamily="@font/variable"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:layout_marginTop="-50dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:gravity="center"
+        android:layout_margin="25dp"
+        android:background="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="@drawable/textbox"
+            android:drawableLeft="@drawable/wperson"
+            android:hint="Full Name"
+            android:drawablePadding="15dp"
+            android:padding="15dp"
+            android:layout_margin="5dp"
+            android:textColor="@color/white"
+            android:textColorHint="#E5E6E4"
+            android:inputType="textPersonName">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/num"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="@drawable/textbox"
+            android:drawableLeft="@drawable/wnum"
+            android:hint="Cellphone Number"
+            android:drawablePadding="15dp"
+            android:padding="15dp"
+            android:layout_margin="5dp"
+            android:textColor="@color/white"
+            android:textColorHint="#E5E6E4"
+            android:inputType="phone">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/Email"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="@drawable/textbox"
+            android:drawableLeft="@drawable/wmail"
+            android:hint="Email"
+            android:drawablePadding="15dp"
+            android:padding="15dp"
+            android:layout_margin="5dp"
+            android:textColor="@color/white"
+            android:textColorHint="#E5E6E4"
+            android:inputType="textEmailAddress|textEmailSubject">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/Pass"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="@drawable/textbox"
+            android:drawableLeft="@drawable/wlock"
+            android:hint="Password"
+            android:layout_margin="5dp"
+            android:drawablePadding="15dp"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="#E5E6E4"
+            android:inputType="textPassword">
+
+        </EditText>
+
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:text="have an Account"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/btn1"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginTop="336dp"
+        android:layout_marginLeft="120dp"/>
+
+    <Button
+        android:id="@+id/Reg"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="390dp"
+        android:backgroundTint="#ffa07a"
+        android:gravity="center"
+        android:text="Register"
+        android:textColor="@color/white" />
+
+
+
+
+
+</RelativeLayout>

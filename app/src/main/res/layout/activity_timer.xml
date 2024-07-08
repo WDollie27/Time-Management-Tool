@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/black"
+    tools:context=".Timer">
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Back"
+        android:textColor="@color/white"
+        android:backgroundTint="#ffa07a"
+        tools:layout_editor_absoluteX="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Enter Details"
+        android:fontFamily="@font/variable"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:layout_marginTop="60dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="390dp"
+        android:gravity="center"
+        android:layout_margin="25dp"
+        android:layout_centerInParent="true"
+        android:background="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/assignment"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:background="@drawable/textbox"
+        android:layout_below="@+id/back"
+        android:layout_marginTop="-90dp"
+        android:hint="Assignment"
+        android:padding="15dp"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/variable"
+        android:textAlignment="center"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textColorHint="@color/white"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:background="@drawable/textbox"
+        android:layout_below="@+id/assignment"
+        android:layout_marginTop="8dp"
+        android:hint="Due Date"
+        android:padding="15dp"
+        android:layout_margin="1dp"
+        android:fontFamily="@font/variable"
+        android:textColorHint="@color/white"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#ffa07a"
+        android:text="Insert"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:backgroundTint="#ffa07a"
+        android:text="View"
+        android:textColor="@color/white"/>
+
+     <Button
+         android:id="@+id/btnDelete"
+         android:layout_width="200dp"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="2dp"
+         android:backgroundTint="#ffa07a"
+         android:text="Delete"
+         android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigator"
+        android:background="#ffa07a"
+        app:itemTextColor="@color/black"
+        app:menu="@menu/menu"
+        android:layout_alignParentBottom="true"/>
+
+
+
+</RelativeLayout>

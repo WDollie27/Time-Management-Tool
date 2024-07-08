@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/black"
+    tools:context=".Contact">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/textbox"
+        android:paddingLeft="20dp"
+        android:hint="To:"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp"
+        android:ems="10"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:hint="Subject:"
+        android:paddingLeft="20dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:background="@drawable/textbox"
+        android:layout_alignLeft="@id/editText1"
+        android:layout_below="@id/editText1"
+        android:layout_marginTop="30dp"
+        android:ems="10">
+        <requestFocus/>
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/textbox"
+        android:textColor="@color/white"
+        android:paddingLeft="20dp"
+        android:textColorHint="@color/white"
+        android:hint="Message:"
+        android:layout_below="@id/editText2"
+        android:layout_alignLeft="@id/editText2"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#ffa07a"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/editText3"
+        android:text="Send"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigator"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/purple_500"
+        app:backgroundTint="#ffa07a"
+        app:itemTextColor="@color/black"
+        android:layout_marginBottom="0dp"
+        app:menu="@menu/menu"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="675dp" />
+
+
+</RelativeLayout>

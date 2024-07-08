@@ -1,0 +1,2 @@
+rootProject.name = "Time Management Tool"
+include ':app'

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/black"
+    android:gravity="center"
+    tools:context=".Tasks">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Timer For Tasks"
+        android:fontFamily="@font/variable"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:layout_marginTop="70dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="250dp"
+        android:text="00:00"
+        android:textColor="@android:color/white"
+        android:textSize="60sp"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="240dp" />
+
+    <Button
+        android:id="@+id/btnStartStop"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="330dp"
+        android:backgroundTint="#ffa07a"
+        android:text="Start"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="327dp" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ffa07a"
+        android:text="Reset"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="330dp"
+        android:textColor="@color/black"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="219dp"
+        tools:layout_editor_absoluteY="327dp"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/timerInput"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:hint="Minutes"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="190dp"
+        android:inputType="number"
+        android:maxLength="4"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="195dp" />
+
+    <Button
+        android:id="@+id/btnSet"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ffa07a"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="190dp"
+        android:text="Set"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="225dp"
+        tools:layout_editor_absoluteY="192dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigator"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/purple_500"
+        app:backgroundTint="#ffa07a"
+        app:itemTextColor="@color/black"
+        app:menu="@menu/menu"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="675dp" />
+
+
+</RelativeLayout>
