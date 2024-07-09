@@ -16,7 +16,8 @@
         <activity android:name=".Timer" />
         <activity android:name=".SecondActivity" />
         <activity android:name=".Register" />
-        <activity android:name=".Splash">
+        <activity android:name=".Splash"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
